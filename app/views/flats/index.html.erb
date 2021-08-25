@@ -13,9 +13,9 @@
         <p><%= flat.description %></p>
       </div>
       <%# <%= <i class="fas fa-user-friends"></i> %>
-      <h2 class="card-pricing"><%= flat.price_per_night %>  </h2>
+      <h2 class="card-pricing"><i class="material-icons mr-2">people</i><span><%= flat.number_of_guests %></span></h2>
       <%# <i class="fas fa-euro-sign"></i> %>
-      <h2 class="card-pricing"><%= flat.number_of_guests %></h2>
+      <h2 class="card-pricing"><i class="material-icons mr-2">euro_symbol</i><%= flat.price_per_night %></h2>
       <img src="https://source.unsplash.com/50x50/?profile" class="card-user avatar-bordered" />
     </div>
     <div class="card-actions">

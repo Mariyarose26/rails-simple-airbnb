@@ -44,10 +44,12 @@
   position: relative;
   padding: 16px 24px;
   width: 100%;
+  top: -10px;
 }
 .details img {
   height: 350px;
   width: 100%;
+  object-fit: cover;
 }
 .container {
   display: flex;
@@ -75,4 +77,9 @@
 .input-form {
   margin-left: 20px;
   margin-right: 20px;
+}
+.card-pricing {
+  position: relative;
+  top: 40px;
+  right: -5px;
 }

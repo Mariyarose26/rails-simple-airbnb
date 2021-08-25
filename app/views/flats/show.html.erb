@@ -6,8 +6,10 @@
       <h2><%= @flat.name %></h2>
       <p><%= @flat.description %></p>
     </div>
-    <h2 class="card-pricing"><i class="fas fa-user-friends"></i><span><%= @flat.price_per_night %></span></h2>
-    <h2 class="card-pricing"><i class="fas fa-euro-sign"></i><span><%= @flat.number_of_guests %></span></h2>
+    <div class="flex">
+      <h2 class="details-card-pricing"><i class="material-icons mr-2">people</i><span><span><%= @flat.price_per_night %></span></h2>
+      <h2 class="details-card-pricing"><i class="material-icons mr-2">euro_symbol</i><span><%= @flat.number_of_guests %></span></h2>
+    </div>
   </div>
 </div>
 

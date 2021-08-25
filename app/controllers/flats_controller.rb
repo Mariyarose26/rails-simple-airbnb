@@ -10,7 +10,7 @@ class FlatsController < ApplicationController
   end
   def create
     @flat = Flat.new(flat_params)
-    @task.save
+    @flat.save
     redirect_to flat_path(@flat)
   end
   def edit
