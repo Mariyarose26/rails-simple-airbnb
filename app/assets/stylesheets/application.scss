@@ -1,0 +1,73 @@
+@import "bootstrap/scss/bootstrap";
+.card {
+  overflow: hidden;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.card > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-infos, .info {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-infos .card-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.card-actions {
+  position: relative;
+  padding: 16px 24px;
+  width: 100%;
+}
+.details img {
+  height: 350px;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex: 0 1 auto;
+  margin: 0;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+@media(max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
